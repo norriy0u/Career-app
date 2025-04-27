@@ -1,0 +1,27 @@
+/* src/index.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🌊 Wave Mode transition */
+html {
+  transition: background-color 0.7s ease, color 0.7s ease;
+  body {
+    background-color: transparent;
+  }
+  
+}
+@keyframes moveVertical {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
+  
+  .animate-moveVertical {
+    animation: moveVertical 5s linear infinite;
+  }
+  
